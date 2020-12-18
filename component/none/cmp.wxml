@@ -1,0 +1,6 @@
+<!--component/none/cmp.wxml-->
+<view class='hasnone'>
+  <image class="image" mode='widthFix' src='/images/hasnone.png'></image>
+  <view class='text'>暂时没有相关订单哦！</view>
+</view>
+

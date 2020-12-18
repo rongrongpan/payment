@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="info">
+    <image class="image" src="{{storeInfo.branchLogo}}"></image>
+    <view class="name">{{storeInfo.branchName}}</view>
+    <view class="phone">{{storeInfo.branchPhone}}</view>
+  </view>  
+  <view class="btnwra">
+    <navigator url="/pages/changePassword/changepassword" class="button" hover-class="hover">修改密码 <text class="iconfont iconleft"></text></navigator>
+    <view catchtap="loginOut" class="button password" hover-class="hover">退出账户 <text class="iconfont iconleft"></text></view>
+  </view>
+</view>

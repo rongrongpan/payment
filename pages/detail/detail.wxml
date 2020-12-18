@@ -1,0 +1,58 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="price">
+      <view class="status"><text class="iconfont iconfinish"></text> 交易成功</view>
+      <view class="num"><text>￥</text>{{orderInfo.price1.yuan}}<text>{{orderInfo.price1.fen}}</text></view>
+    </view>
+    <view class="lineprice">
+      <view class="cir left"></view>
+      <view class="cir right"></view>
+    </view>
+    <view class="li">
+      <text>支付账户</text>
+      <view class="right">
+        <view class="name">{{orderInfo.userName}}</view>
+        <view class="num">{{orderInfo.idCard}}</view>
+      </view>
+    </view>
+    <view class="li line">
+      <text>账户余额</text>
+      <view class="right">
+        <view class="name xiaoqin">{{orderInfo.xiaoqinCard}}</view>
+      </view>
+    </view>
+    <view class="li">
+      <text>商品说明</text>
+      <view class="right">{{orderInfo.productDescription}}</view>
+    </view>
+    <view class="li">
+      <text>店铺</text>
+      <view class="right">{{orderInfo.branchName}}</view>
+    </view>
+    <view class="li">
+      <text>支付方式</text>
+      <view class="right">{{orderInfo.payType}}</view>
+    </view>
+    <view class="li">
+      <text>订单编号</text>
+      <view class="right">{{orderInfo.orderCode}} <text catchtap="getCopy" data-text="{{orderInfo.orderCode}}">复制</text></view>
+    </view>
+    <view class="li">
+      <text>交易流水号</text>
+      <view class="right">{{orderInfo.payCode}} <text catchtap="getCopy" data-text="{{orderInfo.payCode}}">复制</text></view>
+    </view>
+    <view class="li">
+      <text>支付时间</text>
+      <view class="right">{{orderInfo.payTime}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- <view class="container errorwra" wx:else>
+  <view class="error">
+    <image class="img" mode="widthFix" src="/images/error.png"></image>
+    <view class="font">交易失败</view>
+  </view>
+  <button hover-class="hover" class="button" type="default">重新收款</button>
+</view> -->

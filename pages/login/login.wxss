@@ -1,0 +1,62 @@
+/* pages/login/login.wxss */
+.container{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 110rpx 40rpx 0;
+}
+.logo{
+  width: 180rpx;
+  height: 180px;
+}
+.logintext{
+  padding-top: 120rpx;
+}
+.weui-input{
+  width: 100%;
+  height: 80rpx;
+  border-radius: 24rpx;
+  background-color: #fff;
+  margin-bottom: 30rpx;
+  text-align: left;
+  box-sizing: border-box;
+  padding:0 30rpx;
+  display: flex;
+  align-items: center;
+}
+.weui-input .iconfont{
+  font-size: 32rpx;
+  color: #DCDFE6;
+  flex-shrink: 0;
+}
+.weui-input .input{
+  height: 100%;
+  font-size: 30rpx;
+  color: #333;
+  flex-grow: 1;
+  margin-right: 24rpx;
+}
+.button[type='default']{ 
+  background-color: #4666B0;
+  color: #fff;
+  margin-top: 80rpx;
+}
+.forgrt{
+  width: 100%;
+  font-size: 24rpx;
+  color: #4666B0;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.nav{
+  display: inline-block;
+  padding: 10rpx;
+}
+.desc{
+  font-size: 24rpx;
+  color: #c0c4cc;
+  text-align: center;
+  position: fixed;
+  bottom: 30rpx;
+  left: 0;
+  width: 100%;
+}

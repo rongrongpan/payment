@@ -1,0 +1,26 @@
+<!--pages/collection/collection.wxml-->
+<view class="container">
+  <view class="infoWra">
+    <view class="title">请核实收款对象</view>
+    <view class="info">
+      <view class="left">
+        <view class="name">{{orderInfo.userName}}</view>
+        <view class="number">{{orderInfo.idCard}}</view>
+      </view>
+      <view class="right">
+        <view class="price">￥{{orderInfo.xiaoqinCard1}}</view>
+        <view class="desc">文体经费余额</view>
+      </view>
+    </view>
+  </view>
+  <form catchsubmit="createOrder">
+    <view class="money">
+      <view class="title">收款金额</view>
+      <view class="getmoney">
+        <text class="text">￥</text>
+        <input type="digit" name="price" placeholder="请输入扣款金额" class="input" placeholder-style="color:#DCDFE6"></input>
+      </view>
+    </view>
+    <button class="button" hover-class="hover" type="default" formType="submit">确定收款</button>
+  </form>
+</view>

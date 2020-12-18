@@ -1,0 +1,75 @@
+/* pages/collection/collection.wxss */
+.container{
+  box-sizing: border-box;
+  padding: 50rpx 40rpx 0;
+  color: #333;
+}
+.title{
+  font-size: 26rpx;
+}
+.info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.info .name{
+  font-size: 36rpx;
+  line-height: 36rpx;
+  font-weight: bolder;
+}
+.info .price{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.info .desc,.info .number{
+  font-size: 24rpx;
+  line-height: 24rpx;
+  margin-top: 20rpx;
+}
+.info .desc{
+  color: #909399;
+}
+.info .right{
+  text-align: center;
+}
+.getmoney{
+  width: 100%;
+  border-radius: 6rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  box-sizing: border-box;
+  margin-top: 40rpx;
+}
+.getmoney .text{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.getmoney .input{
+  font-size: 40rpx;
+  width: 100%;
+  margin-left: 26rpx;
+  font-weight: bold;
+}
+.button[type='default']{
+  background-color: #4666B0;
+  color: #fff;
+  margin-top:36rpx;
+}
+.infoWra{
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 24rpx 36rpx 36rpx;
+  border-radius: 24rpx;
+}
+.money{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24rpx 36rpx 36rpx;
+  background-color: #fff;
+  border-radius: 24rpx;
+  margin-top: 24rpx;
+}

@@ -1,0 +1,19 @@
+/* pages/remark/remark.wxss */
+page{
+  background-color: #F5F7FA;
+}
+.container .text{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx 40rpx;
+  background-color: #fff;
+  height: 400rpx;
+  font-size: 26rpx;
+  color: #C0C4CC;
+}
+.button[type='default']{
+  background-color: #4666B0;
+  color: #fff;
+  margin: 60rpx auto 0;
+  width: 670rpx;
+}

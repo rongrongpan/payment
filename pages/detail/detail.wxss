@@ -1,0 +1,133 @@
+/* pages/detail/detail.wxss */
+.container{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 36rpx;
+}
+.top{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 24rpx;
+  padding: 0 36rpx 36rpx;
+}
+.top .price{
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 50rpx 24rpx;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.lineprice{
+  width: 594rpx;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 1px dotted #DCDFE6;
+}
+.lineprice .cir{
+  position: absolute;
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  background-color: #F5F7FA;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lineprice .cir.right{
+  right: -60rpx;
+}
+.lineprice .cir.left{
+  left: -60rpx;
+}
+.price .num{
+  font-size: 78rpx;
+  font-weight: bold;
+  height: 78rpx;
+  line-height: 78rpx;
+}
+.price .num text{
+  font-size: 50rpx;
+}
+.price .status{
+  font-size: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+.price .status .iconfont{
+  margin-right: 14rpx;
+  color: #52CCC1;
+}
+.li{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  line-height: 40rpx;
+}
+.li text{
+  font-size: 26rpx;
+  color: #909399;
+}
+.li .right{
+  font-size: 26rpx;
+  color: #303133;
+  text-align: right;
+}
+.li .right .num{
+  color: #909399;
+}
+.li.line{
+  border-bottom: 1px solid #F0F2F5;
+  padding: 36rpx 0;
+}
+.li .right .xiaoqin{
+  font-size: 48rpx;
+  font-weight: bold;
+}
+.remark{
+  height: 100rpx;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+  border-top: 20rpx solid #F0F2F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26rpx;
+  color: #4666B0;
+  background-color: #fff;
+}
+.remark .img{
+  width: 18rpx;
+}
+page{
+  background-color: #F5F7FA;
+}
+.error{
+  width: 100%;
+  text-align: center;
+  padding-top: 105rpx;
+}
+.error .img{
+  width: 80rpx;
+}
+.errorwra{
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+.error .font{
+  font-size: 28rpx;
+  text-align: center;
+  height: 28rpx;
+  line-height: 28rpx;
+  margin-top: 30rpx;
+}
+.button[type='default']{
+  background-color: #4666B0;
+  color: #fff;
+  margin-top: 212rpx;
+}

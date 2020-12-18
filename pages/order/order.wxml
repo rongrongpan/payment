@@ -1,0 +1,36 @@
+<!--pages/order.wxml-->
+<view class="container">
+  <view class="info">
+    <view class="tit">用户信息</view>
+    <view class="myinfo">
+      <view class="name">
+        <text>{{order.userName}}</text>
+        <text class="price">￥{{order.xiaoqinCard1}}</text>
+      </view>
+      <view class="detail">
+        <view class="left"><text class="iconfont iconic_IDcard"></text>{{order.idCard}}</view>
+        <text>文体经费余额</text>
+      </view>
+    </view>
+    <view catchtap="getMoney" class="getmoney">
+      <view class="left"><text class="iconfont iconmoney"></text>向Ta收款</view>
+      <text class="iconfont iconleft"></text>
+    </view>
+  </view>
+  <view catchtap="navToNext" data-id="{{item.id}}" class="list" wx:for="{{order.orderInfoList}}" wx:key="id">
+    <view class="title">
+      <view class="tit">{{item.branchName}}</view>
+      <text class="iconfont iconleft"></text>
+    </view>
+    <view class="content">
+      <view class="left">
+        <view class="img"><image class="image" mode="widthFix" src="{{item.itemInfo[0].picture}}"></image></view>
+        <view class="tit overhide2">{{item.itemInfo[0].item}}</view>
+      </view>
+      <view class="price">
+        <view class="money">￥{{item.price}}</view>
+        <view class="num">共{{item.itemInfo.length}}件</view>
+      </view>
+    </view>
+  </view>
+</view>

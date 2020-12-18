@@ -1,0 +1,31 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <image class="logo" src="/images/logo.png" mode="widthFix"></image>
+  <form catchsubmit="toLogin">
+    <view class="logintext">
+      <view class="weui-input">
+        <input 
+          placeholder-style="color:#C0C4CC;" 
+          class="input" 
+          type="number" 
+          maxlength="11" 
+          name="phone"
+          placeholder="输入手机号" />
+      </view>
+      <view class="weui-input">
+        <input 
+          placeholder-style="color:#C0C4CC;" 
+          class="input" 
+          type="{{passwordType}}" 
+          maxlength="12" 
+          name="pass"
+          type="{{passwordType}}" 
+          placeholder="输入登录密码" />
+        <text class="iconfont iconbranch" catchtap="seePassword"></text>
+      </view>
+    </view>
+    <button class="button" hover-class="hover" type="default" formType="submit">登录</button>
+  </form>
+  <view class="forgrt"><navigator class="nav" url="/pages/changePassword/changepassword">忘记密码</navigator></view>
+  <view class="desc">内部结算系统，需登录后使用</view>
+</view>

@@ -1,0 +1,134 @@
+/* pages/order.wxss */
+.container{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 36rpx;
+}
+.getmoney{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 24rpx;
+  color: #303133;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.getmoney .left .iconfont{
+  font-size: 32rpx;
+  color: #4666B0;
+  margin-right: 12rpx;
+}
+.info{
+  width: 100%;
+  border-radius: 24rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 36rpx;
+  margin-bottom: 24rpx;
+}
+.info .tit{
+  width: 100%;
+  height: 78rpx;
+  line-height: 78rpx;
+  font-size: 32rpx;
+  color: #303133;
+}
+.info .myinfo{
+  width: 100%;
+  border-bottom: 1px solid #F0F2F5;
+  padding: 12rpx 0 22rpx;
+}
+.info .myinfo .name{
+  display: flex;
+  justify-content: space-between;
+  height: 60rpx;
+  align-items: center;
+  font-size: 40rpx;
+}
+.info .myinfo .name .price{
+  font-size: 48rpx;
+}
+.info .myinfo .detail{
+  height: 34rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #909399;
+  margin-top: 12rpx;
+}
+.info .myinfo .detail .iconfont{
+  font-size: 28rpx;
+  color: #52CCC1;
+  margin-right: 12rpx;
+}
+.list{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 24rpx;
+  box-sizing: border-box;
+  padding: 0 36rpx 36rpx;
+  margin-bottom: 24rpx;
+}
+.list .title{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 78rpx;
+  font-size: 32rpx;
+  color: #303133;
+}
+.list .title text{
+  color: #C0C4CC;
+}
+.content{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24rpx 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.content .left{
+  flex-grow: 1;
+  display: flex;
+}
+.content .left .img{
+  font-size: 0;
+  width: 122rpx;
+  height: 122rpx;
+  margin-right: 12rpx;
+  background-color: #F5F7FA;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.content .left .img .image{
+  width: 100%;
+}
+.content .left .tit{
+  font-size: 24rpx;
+  color: #303133;
+  line-height: 34rpx;
+  height: 68rpx;
+}
+.content .price{
+  width: 184rpx;
+  flex-shrink: 0;
+  margin-left: 24rpx;
+  text-align: right;
+}
+.content .price .money{
+  color: #303133;
+  font-size: 24rpx;
+  line-height: 38rpx;
+  margin-top: 24rpx;
+}
+.content .price .money text{
+  font-size: 32rpx;
+}
+.content .price .num{
+  font-size: 24rpx;
+  color: #909399;
+}

@@ -1,0 +1,37 @@
+<!--pages/orderXq/orderXq.wxml-->
+<view class="container">
+  <view class="product">
+    <view class="store">
+      <view class="name">{{orderInfo.branchName}}</view>
+      <view class="select">共{{orderInfo.itemInfo.length}}件</view>
+    </view>
+    <view class="list" wx:for="{{orderInfo.itemInfo}}" wx:key="productId">
+      <view class="shopinfo">
+        <view class="img"><image class="image" mode="widthFix" src="{{item.picture}}"></image></view>
+        <view class="right">
+          <view class="title overhide2">{{item.item}}</view>
+          <!-- <view class="time">有效期:2020.01.10 - 2021.01.10</view> -->
+          <view class="price">￥ {{item.price}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="order">
+    <view class="tit">订单信息</view>
+    <view class="li">
+      <view class="left"><text class="tit">订单编号</text>{{orderInfo.orderCode}}</view>
+      <text class="copy" catchtap="getCopy" data-text="{{orderInfo.orderCode}}">复制</text>
+    </view>
+    <navigator url="/pages/detail/detail?id={{orderInfo.id}}" class="li line">
+      <view class="left"><text class="tit">交易流水</text>{{orderInfo.payCode}}</view>
+      <text class="iconfont iconleft"></text>
+    </navigator>
+    <view class="li">
+      <view class="left"><text class="tit">创建时间</text>{{orderInfo.createTime}}</view>
+    </view>
+    <view class="li">
+      <view class="left"><text class="tit">支付时间</text>{{orderInfo.payTime}}</view>
+    </view>
+  </view>
+  <view class="button" catchtap="clearOrder" hover-class="hoverBtn">核销</view>
+</view>

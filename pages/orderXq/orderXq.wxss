@@ -1,0 +1,141 @@
+/* pages/orderXq/orderXq.wxss */
+.container{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 36rpx;
+}
+.product{
+  background-color: #fff;
+  border-radius: 24rpx;
+  margin-top:24rpx;
+  box-sizing: border-box;
+  padding: 0 36rpx 36rpx;
+}
+.product .store{
+  width: 100%;
+  height: 78rpx;
+  line-height: 78rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+}
+.product .store .select{
+  font-size: 24rpx;
+  color: #909399;
+  display: flex;
+  align-items: center;
+}
+.product .store .select text{
+  margin-left: 14rpx;
+}
+.iconfont.sel{
+  font-size: 36rpx;
+}
+.iconfont.sel.iconfuxuananniu{
+  color: #DCDFE6;
+}
+.iconfont.sel.iconfinish{
+  color: #4666B0;
+}
+.list{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24rpx 0;
+  border-bottom: 1px solid #F0F2F5;
+}
+.list:last-child{
+  border-bottom: 0;
+}
+.list .shopinfo{
+  flex-grow: 1;
+  display: flex;
+}
+.list .shopinfo .img{
+  width: 132rpx;
+  height: 132rpx;
+  overflow: hidden;
+  margin-right: 24rpx;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: #F5F7FA;
+}
+.list .shopinfo .img .image{
+  width: 100%;
+}
+.list .shopinfo .right{
+  font-size: 0;
+}
+.list .shopinfo .right .title{
+  font-size: 24rpx;
+  color: #303133;
+  line-height: 34rpx;
+}
+.list .shopinfo .right .time{
+  font-size: 20rpx;
+  color: #FF7661;
+  background-color: #FCE5E3;
+  display: inline-block;
+  line-height: 24rpx;
+  padding: 2rpx 6rpx;
+  border-radius: 6rpx;
+  margin: 12rpx 0;
+}
+.shopinfo .right .price{
+  color: #303133;
+  font-size: 24rpx;
+}
+.shopinfo .right .price text{
+  font-size: 32rpx;
+}
+.order{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 24rpx;
+  margin-top: 24rpx;
+  box-sizing: border-box;
+  padding: 0 36rpx 36rpx;
+  margin-bottom: 128rpx;
+}
+.order .tit{
+  height: 78rpx;
+  line-height: 78rpx;
+  font-size: 32rpx;
+  color: #303133;
+}
+.order .li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#606266;
+  font-size: 28rpx;
+}
+.order .li .tit{
+  color: #909399;
+  width: 150rpx;
+}
+.order .li .left{
+  display: flex;
+  align-items: center;
+}
+.order .li .copy{
+  color: #4666B0;
+}
+.order .li.line{
+  border-top: 1px solid #F0F2F5;
+  border-bottom: 1px solid #F0F2F5;
+}
+.button{
+  width: 678rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #fff;
+  text-align:center;
+  background-color: #4666B0;
+  border-radius: 40rpx;
+  position: fixed;
+  bottom: 24rpx;
+  left: 36rpx;
+}

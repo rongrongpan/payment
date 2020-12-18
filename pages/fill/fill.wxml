@@ -1,0 +1,25 @@
+<!--pages/fill/fill.wxml-->
+<view class="container">
+  <view class="total">
+    <picker mode="date" value="{{selectMonth}}" fields="month" start="2020-01-01" end="2030-01-01" bindchange="bindDateChange">
+      <view class="picker">
+        <view class="month">{{selectMonth}} <text class="iconfont icondown"></text></view>
+      </view>
+    </picker>
+    <view class="money"><text class="desc">总收入：</text><text class="big">￥{{fillXq.totalPrice1.yuan}}</text>{{fillXq.totalPrice1.fen}}</view>
+  </view>
+  <view class="bottom">
+    <view class="list" wx:for="{{fillXq.billTodayOrderList}}" wx:key="createTime">
+      <view class="title">
+        <text>{{item.createTime}}</text>
+        <text class="right">+￥{{item.price}}</text>
+      </view>
+      <navigator url="/pages/detail/detail?id={{el.id}}" class="li" wx:for="{{item.billTodayUserOrderList}}" wx:for-item="el" wx:key="id">
+        <view class="price"><text class="name">{{el.userName}}</text> <text class="pri">{{el.price}}</text></view>
+        <view class="idcard"><text class="iconfont iconic_IDcard"></text>{{el.idCard}}</view>
+        <view class="date">{{el.createTime}}</view>
+      </navigator>
+    </view>
+    <hasNone wx:if="{{fillXq.billTodayOrderList.length===0}}" />
+  </view>
+</view>

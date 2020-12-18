@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "hasNone":"/component/none/cmp"
+  },
+  "navigationBarTitleText": "交易明细"
+}

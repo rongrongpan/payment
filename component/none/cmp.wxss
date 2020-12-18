@@ -1,0 +1,15 @@
+/* component/none/cmp.wxss */
+.hasnone{
+  width: 100%;
+  text-align: center;
+  padding-top: 270rpx;
+}
+.hasnone .image{
+  width: 180rpx;
+  height: 220rpx;
+}
+.hasnone .text{
+  font-size: 26rpx;
+  color: #B0B0B0;
+  margin-top: 48rpx;
+}

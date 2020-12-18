@@ -1,0 +1,54 @@
+/* pages/loginout/loginout.wxss */
+.container{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+.info{
+  width: 100%;
+  text-align: center;
+  padding-top:100rpx;
+  padding-bottom: 100rpx;
+}
+.info .image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+  overflow: hidden;
+}
+.info .name{
+  font-size: 36rpx;
+  line-height: 36rpx;
+  color: #333;
+  font-weight: bold;
+  margin-top: 30rpx;
+}
+.info .phone{
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #909399;
+  margin-top: 20rpx;
+}
+.btnwra{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 24rpx;
+  box-sizing: border-box;
+  padding: 0 36rpx;
+}
+.button{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #606266;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button.password{
+  border-top: 1px solid #F0F2F5;
+}
+.button text{
+  color: #C0C4CC;
+}

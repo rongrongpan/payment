@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <navigator url="/pages/loginout/loginout" class="storeName">
+    <image class="logo" src="{{userInfo.branchLogo}}"></image>
+    <view class="tit overhide">{{userInfo.branchName}}</view>
+    <text class="iconfont iconmodify"></text>
+  </navigator>
+  <navigator url="/pages/fill/fill" class="paylist">
+    <view class="left">交易明细 <text>| 今日 +￥{{todayPrice}}</text></view>
+    <text class="iconfont iconleft"></text>
+  </navigator>
+  <view class="getcode" catchtap="openCode">
+    <image wx:if="{{loadding}}" class="load" mode="widthFix" src="/images/loading.png"></image>
+    <view class="status" wx:else>
+      <text class="iconfont iconIc_scanning"></text>
+      <view class="font">扫码收款</view>
+    </view>
+  </view>
+</view>
